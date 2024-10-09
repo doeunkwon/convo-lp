@@ -1,0 +1,75 @@
+:root {
+  --text-color: #46270D;
+  --light-text-color: #99806D;
+  --offwhite-color: #F6F0EB;
+  --white-color: #FBF7F4;
+  --feint-color: #E8DCD3;
+  --glow-color: #F2DBC8;
+  --orange-color: #EE9E61;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, var(--glow-color, #F2DBC8), var(--white-color, #FBF7F4));
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background: radial-gradient(circle, var(--glow-color, #F2DBC8), var(--white-color, #FBF7F4));
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  line-height: 82px;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  line-height: 70px;
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  color: var(--light-text-color, #99806D);
+}
+
+button {
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: none;
+  background: var(--orange-color, #EE9E61);
+  box-shadow: 0px 10px 20px 0px rgba(238, 158, 97, 0.20);
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white-color, #FBF7F4);
+  font-weight: normal;
+  padding: 10px 40px;
+}
+
+img {
+  height: 80vh
+}

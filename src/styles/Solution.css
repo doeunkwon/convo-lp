@@ -1,0 +1,25 @@
+.Solution {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    margin-top: 90vh;
+  }
