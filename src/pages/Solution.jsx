@@ -1,5 +1,5 @@
 import '../styles/Solution.css'
-import mock2 from '../assets/solution.png'
+import solutionImage from '../assets/solution-image.png'
 import StepsPanel from '../components/StepsPanel'
 
 function Solution() {
@@ -11,7 +11,7 @@ function Solution() {
                     <br />
                     <span style={{color:'var(--light-text-color)'}}>Your social sidekick.</span>
                 </h2>
-                <img className='solution-image' src={mock2} alt="App Preview 2" />
+                <img className='solution-image' src={solutionImage} alt="App Preview 2" />
                 <StepsPanel
                     stepsPanelClassName='solution-panel'
                     verticalDividerClassName='solution-panel-divider'

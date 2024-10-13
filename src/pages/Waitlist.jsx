@@ -1,11 +1,12 @@
+import React from 'react';
 import '../styles/Waitlist.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope } from '@fortawesome/free-regular-svg-icons'; // Importing from the regular set
+import { faUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import TextField from '../components/TextField';
 
-function Waitlist() {
+const Waitlist = React.forwardRef((props, ref) => {
     return (
-        <main className='Waitlist'>
+        <main className='Waitlist' ref={ref}>
             <section className='waitlist-content'>
                 <section className='waitlist-header'>
                     <h1>
@@ -18,14 +19,14 @@ function Waitlist() {
                     </h3>
                 </section>
                 <section className='waitlist-buttons'>
-                <TextField
-                    icon={<FontAwesomeIcon icon={faUser} />}
-                    placeholder='Name'
-                />
-                <TextField
-                    icon={<FontAwesomeIcon icon={faEnvelope} />}
-                    placeholder='Email'
-                />
+                    <TextField
+                        icon={<FontAwesomeIcon icon={faUser} />}
+                        placeholder='Name'
+                    />
+                    <TextField
+                        icon={<FontAwesomeIcon icon={faEnvelope} />}
+                        placeholder='Email'
+                    />
                 </section>
                 <button>
                     Let's do it
@@ -33,6 +34,6 @@ function Waitlist() {
             </section>
         </main>
     );
-}
+});
 
 export default Waitlist;

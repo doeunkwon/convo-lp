@@ -1,7 +1,7 @@
 import '../styles/Intro.css'
-import mock1 from '../assets/mock1.png'
+import introImage from '../assets/intro-image.png'
 
-function Intro() {
+function Intro({ scrollToWaitlist }) {
     return (
         <main className='Intro'>
             <section className='intro-description'>
@@ -13,11 +13,14 @@ function Intro() {
                 <h3>
                     Personalized daily challenges to help you grow socially, <i>wherever</i> you’re starting from.
                 </h3>
-                <button style={{marginTop: 'var(--medium-gap)'}}>
+                <button
+                    style={{marginTop: 'var(--medium-gap)'}}
+                    onClick={scrollToWaitlist}
+                >
                     Join the waitlist
                 </button>
             </section>
-            <img className='intro-image' src={mock1} alt="App Preview 1" />
+            <img className='intro-image' src={introImage} alt="App Preview 1" />
         </main>
     );
 }
