@@ -15,11 +15,11 @@ function Solution() {
                 <StepsPanel
                     stepsPanelClassName='solution-panel'
                     verticalDividerClassName='solution-panel-divider'
-                    title1='1. Get Daily Challenges'
-                    content1='Complete a new social task each day, designed to fit your level and goals.'
-                    title2='2. Track Your Progress'
+                    title1='1. Receive bite-sized tasks.'
+                    content1='Complete just one social challenge each day, designed to fit your level and goals.'
+                    title2='2. Track your performance.'
                     content2='Watch your confidence build over time with clear visual insights into your progress.'
-                    title3='3. Reflect and Learn'
+                    title3='3. Become more social.'
                     content3='Discover your social style and build lasting habits for better connections.'
                 />
             </section>
