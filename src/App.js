@@ -5,6 +5,7 @@ import Solution from './pages/Solution';
 import Waitlist from './pages/Waitlist';
 import { useRef } from 'react';
 function App() {
+
   const waitlistRef = useRef(null);
 
   const scrollToWaitlist = () => {
