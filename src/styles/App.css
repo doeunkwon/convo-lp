@@ -14,13 +14,8 @@
   --xsmall-gap: 5px;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+body {
   overflow-x: hidden;
-  height: 100vh;
-  width: 100%;
-  background: radial-gradient(circle, var(--glow-color, #F2DBC8), var(--white-color, #FBF7F4));
 }
 
 .App {
