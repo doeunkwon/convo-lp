@@ -1,6 +1,7 @@
 :root {
   --text-color: #46270D;
   --light-text-color: #99806D;
+  --super-light-text-color: #c7b5a8;
   --offwhite-color: #F6F0EB;
   --white-color: #FBF7F4;
   --feint-color: #e9ddd4;
@@ -35,6 +36,7 @@ html, body {
 
 h1 {
   font-size: calc(18px + 2vw);
+  line-height: calc((18px + 2vw) * (7 / 5));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -44,6 +46,7 @@ h1 {
 
 h2 {
   font-size: calc(15px + 2vw);
+  line-height: calc((15px + 2vw) * (7 / 5));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -52,12 +55,23 @@ h2 {
 }
 
 h3 {
-  font-size: calc(10px + 1vw);
+  font-size: calc(13px + 0.8vw);
+  line-height: calc((13px + 0.8vw) * (7 / 5));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
   color: var(--light-text-color, #99806D);
+}
+
+p {
+  font-size: calc(7px + 0.5vw);
+  line-height: calc((8px + 0.5vw) * (7 / 5));
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  color: var(--super-light-text-color, #99806D);
 }
 
 button {
@@ -66,7 +80,8 @@ button {
   border: none;
   background: var(--orange-color, #EE9E61);
   box-shadow: 0px 10px 20px 0px rgba(238, 158, 97, 0.20);
-  font-size: calc(13px + 1vw);
+  font-size: calc(13px + 0.5vw);
+  line-height: calc((13px + 0.5vw) * (7 / 5));
   font-family: 'Poppins', sans-serif;
   color: var(--white-color, #FBF7F4);
   font-weight: normal;
@@ -85,7 +100,8 @@ button {
   background: var(--offwhite-color, #F6F0EB);
   box-shadow: 0px 10px 20px 0px rgba(194, 194, 194, 0.2);
   font-family: 'Poppins', sans-serif;
-  font-size: calc(10px + 1vw);
+  font-size: calc(13px + 0.5vw);
+  line-height: calc((13px + 0.5vw) * (7 / 5));
   font-style: normal;
   font-weight: 400;
   padding: var(--small-gap) var(--medium-gap);

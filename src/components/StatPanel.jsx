@@ -8,12 +8,12 @@ function StatPanel({className, stat, title, content}) {
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '20px',
+                gap: '15px',
             }}>
                 <h2>
                     { stat }
                 </h2>
-                <h3 style={{color: 'var(--text-color)'}}>
+                <h3 style={{color: 'var(--text-color)', width: '70%'}}>
                     { title }
                 </h3>
             </section>

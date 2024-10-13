@@ -14,10 +14,11 @@ function Problem() {
                 </h3>
             </header>
             <section className='problem-panels'>
-                <StatPanel className='problem-panel' stat="65%" title="feel socially unconfident." content="Many millennials feel uneasy in face-to-face interactions, making it hard to connect comfortably." />
-                <StatPanel className='problem-panel' stat="40%" title="feel awkward in small talk." content="Many millennials often feel uncomfortable or awkward when required to engage in casual conversation." />
-                <StatPanel className='problem-panel' stat="71%" title="prefer silence over talking." content="Most Americans would rather avoid small talk, highlighting discomfort in casual social interactions." />
+                <StatPanel className='problem-panel' stat="12%" title="of U.S. adults experience anxiety." content="About 12.1% of U.S. adults experience social anxiety disorder in their lives, per the NIMH’s National Comorbidity Survey." />
+                <StatPanel className='problem-panel' stat="36%" title="of young people are affected globally." content="A study found over 36% of young people aged 16-29 meet the criteria for Social Anxiety Disorder (SAD) across seven countries." />
+                <StatPanel className='problem-panel' stat="18%" title="underestimate the affects of anxiety." content="One in six young people aged 16-29 believe they have no social anxiety, yet 18% meet the criteria for Social Anxiety Disorder (SAD). " />
             </section>
+            <p style={{width: '70%'}}>Source: [Stat 1] National Institute of Mental Health (NIMH), based on the National Comorbidity Survey Replication (NCS-R). [Stat 2 & 3] Jefferies P, Ungar M (2020) Social anxiety in young people: A prevalence study in seven countries. PLoS ONE 15(9): e0239133.</p>
         </main>
     )
 }
