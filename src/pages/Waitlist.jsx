@@ -80,6 +80,11 @@ const Waitlist = React.forwardRef((props, ref) => {
                     {isSubmitting ? 'Joining...' : "Let's do it"}
                 </button>
             </section>
+            <section className='waitlist-rights-container'>
+                <p>
+                    @2024 Convo | All rights reserved
+                </p>
+                </section>
         </main>
     );
 });

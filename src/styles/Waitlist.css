@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     min-width: 100%;
     min-height: 100vh;
 }
@@ -13,7 +13,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--large-gap)
+    gap: var(--large-gap);
+    flex: 1;
 }
 
 .waitlist-buttons {
@@ -30,6 +31,15 @@
     flex-direction: column;
     gap: var(--medium-gap);
     text-align: center;
+}
+
+.waitlist-rights-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: var(--medium-gap);
 }
 
 @media (max-width: 768px) {

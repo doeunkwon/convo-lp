@@ -26,7 +26,7 @@ body {
   justify-content: center;
   color: var(--text-color);
   background: radial-gradient(circle, var(--glow-color, #F2DBC8), var(--white-color, #FBF7F4));
-  padding: var(--medium-gap);
+  padding: 0px var(--medium-gap);
 }
 
 h1 {
@@ -60,7 +60,7 @@ h3 {
 }
 
 p {
-  font-size: calc(7px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   line-height: calc((8px + 0.5vw) * (7 / 5));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
