@@ -3,9 +3,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: var(--xlarge-gap);
     min-height: 100vh;
-    min-width: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .description {
@@ -13,5 +15,36 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 40vw;
-    gap: 20px
+    gap: var(--medium-gap);
+    padding: 0px;
+    margin: 0px;
+}
+
+.dailyImage {
+    max-width: calc(130px + 15vw);
+}
+
+@media (max-width: 768px ) {
+    .dailyImage {
+        max-width: 50vw;
+    }
+
+    .Intro {
+        flex-direction: column;
+        gap: var(--large-gap);
+    }
+
+    .description {
+        max-width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
 }

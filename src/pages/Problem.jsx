@@ -14,9 +14,9 @@ function Problem() {
                 </h3>
             </header>
             <section className='panels'>
-                <StatPanel stat="65%" title="feel socially unconfident." content="Many millennials feel uneasy in face-to-face interactions, making it hard to connect comfortably." />
-                <StatPanel stat="40%" title="feel awkward in small talk." content="Many millennials often feel uncomfortable or awkward when required to engage in casual conversation." />
-                <StatPanel stat="71%" title="prefer silence over talking." content="Most Americans would rather avoid small talk, highlighting discomfort in casual social interactions." />
+                <StatPanel className='statPanel' stat="65%" title="feel socially unconfident." content="Many millennials feel uneasy in face-to-face interactions, making it hard to connect comfortably." />
+                <StatPanel className='statPanel' stat="40%" title="feel awkward in small talk." content="Many millennials often feel uncomfortable or awkward when required to engage in casual conversation." />
+                <StatPanel className='statPanel' stat="71%" title="prefer silence over talking." content="Most Americans would rather avoid small talk, highlighting discomfort in casual social interactions." />
             </section>
         </main>
     )

@@ -22,5 +22,39 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 0 20;
+}
+
+.statPanel {
+    width: 20vw;
+    border-radius: 50px;
+    border: 2px solid var(--White, #FBF7F4);
+    background: rgba(246, 240, 235, 0.5);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap);
+    padding: var(--large-gap);
+}
+
+@media (max-width: 1200px ) {
+
+    .Problem {
+        flex-direction: column;
+        gap: var(--large-gap);
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .panels {
+        flex-direction: column;
+    }
+
+    .statPanel {
+        padding: 0px;
+        width: 90vw;
+    }
 }
