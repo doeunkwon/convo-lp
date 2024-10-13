@@ -1,5 +1,4 @@
 .Waitlist {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,30 +7,39 @@
     min-height: 100vh;
 }
 
-.waitlistContent {
+.waitlist-content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px
+    gap: var(--large-gap)
 }
 
-.waitlistHeader {
-    max-width: 50vw;
+.waitlist-buttons {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap)
+}
+
+.waitlist-header {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
     text-align: center;
 }
 
 @media (max-width: 768px) {
 
-    .Waitlist {
-        padding: var(--large-gap);
+    .waitlist-header {
+        width: 100%;
+        gap: var(--small-gap);
     }
 
-    .waitlistHeader {
-        max-width: 95vw;
+    .waitlist-content {
+        gap: var(--medium-gap);
     }
 }

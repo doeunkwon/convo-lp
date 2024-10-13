@@ -5,27 +5,27 @@
     justify-content: center;
     min-width: 100%;
     min-height: 100vh;
-    gap: 60px;
+    gap: var(--large-gap);
 }
 
-.header {
-    max-width: 50vw;
+.problem-header {
+    max-width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--medium-gap);
     text-align: center;
 }
 
-.panels {
+.problem-panels {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: var(--medium-gap);
 }
 
-.statPanel {
-    width: 20vw;
+.problem-panel {
+    width: 25%;
     border-radius: 50px;
     border: 2px solid var(--White, #FBF7F4);
     background: rgba(246, 240, 235, 0.5);
@@ -42,19 +42,21 @@
 
     .Problem {
         flex-direction: column;
-        gap: var(--large-gap);
+        gap: var(--medium-gap);
     }
 
-    .header {
+    .problem-header {
         max-width: 100%;
+        gap: var(--small-gap);
     }
 
-    .panels {
+    .problem-panels {
         flex-direction: column;
     }
 
-    .statPanel {
-        padding: 0px;
-        width: 90vw;
+    .problem-panel {
+        padding: var(--medium-gap);
+        width: 80%;
+        gap: var(--xsmall-gap);
     }
 }

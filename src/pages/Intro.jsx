@@ -4,7 +4,7 @@ import mock1 from '../assets/mock1.png'
 function Intro() {
     return (
         <main className='Intro'>
-            <section className='description'>
+            <section className='intro-description'>
                 <h2>
                     Become more social,
                     <br />
@@ -17,7 +17,7 @@ function Intro() {
                     Join the waitlist
                 </button>
             </section>
-            <img className='dailyImage' src={mock1} alt="App Preview 1" />
+            <img className='intro-image' src={mock1} alt="App Preview 1" />
         </main>
     );
 }

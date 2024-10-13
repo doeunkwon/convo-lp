@@ -5,18 +5,16 @@ import StepsPanel from '../components/StepsPanel'
 function Solution() {
     return (
         <main className='Solution'>
-            <section className='content'>
+            <section className='solution-content'>
                 <h2>
                     Introducing Convo,
                     <br />
                     <span style={{color:'var(--light-text-color)'}}>Your social sidekick.</span>
                 </h2>
-                <div className='overlay'>
-                <img className='progressImage' src={mock2} alt="App Preview 2" />
-                </div>
+                <img className='solution-image' src={mock2} alt="App Preview 2" />
                 <StepsPanel
-                    stepsPanelClassName='stepsPanel'
-                    verticalDividerClassName='vertical-divider'
+                    stepsPanelClassName='solution-panel'
+                    verticalDividerClassName='solution-panel-divider'
                     title1='1. Get Daily Challenges'
                     content1='Complete a new social task each day, designed to fit your level and goals.'
                     title2='2. Track Your Progress'

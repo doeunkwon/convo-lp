@@ -9,27 +9,21 @@
     margin: 0px;
 }
 
-.content {
+.solution-content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50vh;
     position: relative;
 }
 
-.overlay {
-    position: absolute;
-    z-index: 1;
-    bottom: 25%;
+.solution-image {
+    width: 30vw;
+    padding: var(--medium-gap);
 }
 
-.progressImage {
-    height: 30vw;
-}
-
-.stepsPanel {
+.solution-panel {
     border-radius: 50px;
     border: 2px solid var(--White, #FBF7F4);
     background: rgba(246, 240, 235, 0.5);
@@ -43,7 +37,7 @@
     width: 80vw
 }
 
-.vertical-divider {
+.solution-panel-divider {
     width: 5px;
     height: 150px;
     background-color: var(--feint-color);
@@ -53,21 +47,18 @@
 
 @media (max-width: 768px) {
 
-    .stepsPanel {
+    .solution-panel {
         flex-direction: column;
+        width: 80%;
+        padding: 20px 5px;
     }
 
-    .overlay {
-        bottom: 55%;
-
+    .solution-image {
+        width: 80vw;
     }
 
-    .progressImage {
-        height: 80vw
-    }
-
-    .vertical-divider {
-        width: 70vw;
+    .solution-panel-divider {
+        width: 80%;
         height: 2px;
     }
 }

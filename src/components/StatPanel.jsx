@@ -2,7 +2,7 @@ import React from 'react'
 
 function StatPanel({className, stat, title, content}) {
     return (
-        <main className={`stat-panel ${className}`}>
+        <main className={`problem-panel ${className}`}>
             <section style={{
                 display: 'flex',
                 flexDirection: 'row',

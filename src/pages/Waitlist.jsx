@@ -6,17 +6,18 @@ import TextField from '../components/TextField';
 function Waitlist() {
     return (
         <main className='Waitlist'>
-            <section className='waitlistContent'>
-                <section className='waitlistHeader'>
+            <section className='waitlist-content'>
+                <section className='waitlist-header'>
                     <h1>
                         Together, let’s get people chatting again.
                     </h1>
-                    <h3 style={{marginBottom: '30px'}}>
+                    <h3>
                         Join the waitlist and help bring meaningful
                         <br />
                         conversations back into daily life.
                     </h3>
                 </section>
+                <section className='waitlist-buttons'>
                 <TextField
                     icon={<FontAwesomeIcon icon={faUser} />}
                     placeholder='Name'
@@ -25,7 +26,8 @@ function Waitlist() {
                     icon={<FontAwesomeIcon icon={faEnvelope} />}
                     placeholder='Email'
                 />
-                <button style={{marginTop: '60px'}}>
+                </section>
+                <button>
                     Let's do it
                 </button>
             </section>

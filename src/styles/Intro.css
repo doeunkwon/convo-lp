@@ -10,7 +10,7 @@
     margin: 0px;
 }
 
-.description {
+.intro-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,24 +20,25 @@
     margin: 0px;
 }
 
-.dailyImage {
-    max-width: calc(130px + 15vw);
+.intro-image {
+    max-width: calc(140px + 13vw);
 }
 
 @media (max-width: 768px ) {
-    .dailyImage {
+    .intro-image {
         max-width: 50vw;
     }
 
     .Intro {
         flex-direction: column;
-        gap: var(--large-gap);
+        gap: var(--medium-gap);
     }
 
-    .description {
+    .intro-description {
         max-width: 100%;
         height: 100%;
         align-items: center;
+        gap: var(--small-gap);
     }
 
     h2 {
