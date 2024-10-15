@@ -12,21 +12,17 @@ function App() {
   const waitlistRef = useRef(null);
 
   const scrollToWaitlist = () => {
-    console.log('scrolling to waitlist');
     waitlistRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="App">
-      {/* Add the Navbar component here */}
+    <main className="App">
       <Navbar scrollToWaitlist={scrollToWaitlist} />
-      <main>
-        <Intro scrollToWaitlist={scrollToWaitlist} />
-        <Problem />
-        <Solution />
-        <Waitlist ref={waitlistRef} />
-      </main>
-    </div>
+      <Intro />
+      <Problem />
+      <Solution />
+      <Waitlist ref={waitlistRef} />
+    </main>
   );
 }
 

@@ -16,7 +16,7 @@ function Solution() {
                     stepsPanelClassName='solution-panel'
                     verticalDividerClassName='solution-panel-divider'
                     title1='1. Receive bite-sized tasks.'
-                    content1='Complete just one social challenge each day, designed to fit your level and goals.'
+                    content1='Complete just one social challenge each day, tailored to your level and goals.'
                     title2='2. Track your performance.'
                     content2='Watch your confidence build over time with clear visual insights into your progress.'
                     title3='3. Become more social.'

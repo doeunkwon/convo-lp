@@ -1,19 +1,14 @@
 import React from 'react'
+import '../styles/StatPanel.css'
 
-function StatPanel({className, stat, title, content}) {
+function StatPanel({stat, title, content}) {
     return (
-        <main className={`problem-panel ${className}`}>
-            <section style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '15px',
-            }}>
+        <main className='stat-panel'>
+            <section className='stat-panel-header'>
                 <h2>
                     { stat }
                 </h2>
-                <h3 style={{color: 'var(--text-color)', width: '70%'}}>
+                <h3 style={{color: 'var(--text-color)'}}>
                     { title }
                 </h3>
             </section>

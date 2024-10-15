@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-width: 100%;
+    justify-content: center;
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -14,7 +14,6 @@
     align-items: center;
     justify-content: center;
     gap: var(--large-gap);
-    flex: 1;
 }
 
 .waitlist-buttons {
@@ -26,27 +25,25 @@
 }
 
 .waitlist-header {
-    width: 50vw;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
     text-align: center;
 }
 
-.waitlist-rights-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: var(--medium-gap);
+@media (max-width: 1200px) {
+
+    .waitlist-header {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 768px) {
 
     .waitlist-header {
         width: 100%;
-        gap: var(--small-gap);
     }
 
     .waitlist-content {

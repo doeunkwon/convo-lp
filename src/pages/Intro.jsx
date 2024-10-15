@@ -1,6 +1,6 @@
 import '../styles/Intro.css'
 import introImage from '../assets/intro-image.png'
-function Intro({ scrollToWaitlist }) {
+function Intro() {
     return (
         <main className='Intro'>
             <section className='intro-header'>

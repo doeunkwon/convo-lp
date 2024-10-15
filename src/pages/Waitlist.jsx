@@ -35,7 +35,7 @@ const Waitlist = React.forwardRef((props, ref) => {
             const result = await response.json();
             console.log(result);
             if (result.result === 'success') {
-                alert('Thank you for joining the waitlist!');
+                alert('Thanks for joining our waitlist!');
                 setName('');
                 setEmail('');
             } else {
@@ -77,12 +77,10 @@ const Waitlist = React.forwardRef((props, ref) => {
                 <button onClick={handleSubmit} disabled={isSubmitting}>
                     {isSubmitting ? 'Joining...' : "Join the waitlist"}
                 </button>
-            </section>
-            <section className='waitlist-rights-container'>
                 <p>
                     @2024 Convo | All rights reserved
                 </p>
-                </section>
+            </section>
         </main>
     );
 });

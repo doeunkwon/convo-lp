@@ -1,9 +1,8 @@
 import React from 'react'
 import VerticalLine from '../components/VerticalDivider'
+import '../styles/StepsPanel.css'
 
 function StepsPanel({
-    stepsPanelClassName,
-    verticalDividerClassName,
     title1,
     content1,
     title2,
@@ -12,7 +11,7 @@ function StepsPanel({
     content3
 }) {
     return (
-        <main className={`steps-panel ${stepsPanelClassName}`}>
+        <main className='steps-panel'>
             <section style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -26,7 +25,7 @@ function StepsPanel({
             </section>
 
 
-            <VerticalLine className={`vertical-divider ${verticalDividerClassName}`}/>
+            <VerticalLine className='steps-panel-divider'/>
 
             <section style={{
                 display: 'flex',
@@ -40,7 +39,7 @@ function StepsPanel({
                 <h3>{content2}</h3>
             </section>
 
-            <VerticalLine className={`vertical-divider ${verticalDividerClassName}`}/>
+            <VerticalLine className='steps-panel-divider'/>
 
             <section style={{
                 display: 'flex',

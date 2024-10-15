@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     gap: var(--medium-gap);
 }
 
 .problem-header {
-    max-width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
@@ -22,42 +22,26 @@
     align-items: center;
     justify-content: center;
     gap: var(--medium-gap);
-    padding: 0px var(--medium-gap);
 }
 
-.problem-panel {
-    width: 25%;
-    border-radius: 50px;
-    border: 2px solid var(--White, #FBF7F4);
-    background: rgba(246, 240, 235, 0.5);
-    backdrop-filter: blur(15px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--medium-gap);
-    padding: var(--large-gap);
-}
-
-@media (max-width: 1200px ) {
-
+@media (max-width: 1200px) {
     .Problem {
         flex-direction: column;
-        gap: var(--medium-gap);
     }
 
     .problem-header {
-        max-width: 100%;
-        gap: var(--small-gap);
+        width: 80%;
     }
 
     .problem-panels {
         flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
     }
+}
 
-    .problem-panel {
-        padding: var(--medium-gap);
-        width: 80%;
-        gap: var(--xsmall-gap);
+@media (max-width: 768px) {
+    .problem-header {
+        width: 100%;
     }
 }

@@ -1,0 +1,33 @@
+.steps-panel {
+    border-radius: calc(12px + 1vmax);
+    border: 2px solid var(--White, #FBF7F4);
+    background: rgba(246, 240, 235, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap);
+    padding: var(--large-gap);
+}
+
+.steps-panel-divider {
+    width: 5px;
+    height: 150px;
+    background-color: var(--feint-color);
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .steps-panel {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 5px;
+        box-sizing: border-box;
+    }
+
+    .steps-panel-divider {
+        width: 60%;
+        height: 2px;
+    }
+}
