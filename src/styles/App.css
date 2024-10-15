@@ -1,21 +1,9 @@
-:root {
-  --text-color: #46270D;
-  --light-text-color: #99806D;
-  --super-light-text-color: #c7b5a8;
-  --offwhite-color: #F6F0EB;
-  --white-color: #FBF7F4;
-  --feint-color: #e9ddd4;
-  --glow-color: #F2DBC8;
-  --orange-color: #EE9E61;
-  --xlarge-gap: 100px;
-  --large-gap: 60px;
-  --medium-gap: 30px;
-  --small-gap: 10px;
-  --xsmall-gap: 5px;
-}
-
 body {
   overflow-x: hidden;
+}
+
+.App main {
+  padding-top: 1.5rem;
 }
 
 .App {
@@ -26,12 +14,12 @@ body {
   justify-content: center;
   color: var(--text-color);
   background: radial-gradient(circle, var(--glow-color, #F2DBC8), var(--white-color, #FBF7F4));
-  padding: 0px var(--medium-gap);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 h1 {
   font-size: calc(18px + 2vw);
-  line-height: calc((18px + 2vw) * (7 / 5));
+  line-height: calc((18px + 2vw) * (7 / 6));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -41,7 +29,7 @@ h1 {
 
 h2 {
   font-size: calc(15px + 2vw);
-  line-height: calc((15px + 2vw) * (7 / 5));
+  line-height: calc((15px + 2vw) * (7 / 6));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -51,7 +39,7 @@ h2 {
 
 h3 {
   font-size: calc(13px + 0.8vw);
-  line-height: calc((13px + 0.8vw) * (7 / 5));
+  line-height: calc((13px + 0.8vw) * (7 / 6));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -61,7 +49,7 @@ h3 {
 
 p {
   font-size: calc(10px + 0.5vw);
-  line-height: calc((8px + 0.5vw) * (7 / 5));
+  line-height: calc((8px + 0.5vw) * (7 / 6));
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -76,11 +64,11 @@ button {
   background: var(--orange-color, #EE9E61);
   box-shadow: 0px 10px 20px 0px rgba(238, 158, 97, 0.20);
   font-size: calc(13px + 0.5vw);
-  line-height: calc((13px + 0.5vw) * (7 / 5));
+  line-height: calc((13px + 0.5vw) * (7 / 6));
   font-family: 'Poppins', sans-serif;
   color: var(--white-color, #FBF7F4);
   font-weight: normal;
-  padding: 10px 40px;
+  padding: 0.7rem 1.1rem;
 }
 
 .text-field {
@@ -88,7 +76,7 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 400px;
+  width: 450px;
   flex-shrink: 0;
   border-radius: 100px;
   border: 2px solid var(--white-color, #FBF7F4);
@@ -96,7 +84,7 @@ button {
   box-shadow: 0px 10px 20px 0px rgba(194, 194, 194, 0.2);
   font-family: 'Poppins', sans-serif;
   font-size: calc(13px + 0.5vw);
-  line-height: calc((13px + 0.5vw) * (7 / 5));
+  line-height: calc((13px + 0.5vw) * (7 / 6));
   font-style: normal;
   font-weight: 400;
   padding: var(--small-gap) var(--medium-gap);
@@ -133,13 +121,16 @@ button {
 @media (max-width: 768px) {
 
   .App {
-    padding: var(--small-gap);
     gap: var(--large-gap);
   }
 
   .text-field {
-    width: 50vw;
+    width: 70vw;
     gap: 10px;
+  }
+
+  .App main {
+    padding-top: 2.5rem; /* Adjust this value based on your navbar height */
   }
 
 

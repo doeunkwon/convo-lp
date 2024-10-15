@@ -10,6 +10,7 @@ function TextField({icon, placeholder, value, onChange }) {
         placeholder={placeholder} 
         value={value}
         onChange={onChange}
+        aria-label={placeholder}
       />
     </div>
   );

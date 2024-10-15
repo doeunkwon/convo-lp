@@ -5,7 +5,7 @@
     justify-content: center;
     min-width: 100%;
     min-height: 100vh;
-    gap: var(--large-gap);
+    gap: var(--medium-gap);
 }
 
 .problem-header {
@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--medium-gap);
+    padding: 0px var(--medium-gap);
 }
 
 .problem-panel {

@@ -57,9 +57,7 @@ const Waitlist = React.forwardRef((props, ref) => {
                         Together, let's get people chatting again.
                     </h1>
                     <h3>
-                        Join the waitlist and help bring meaningful
-                        <br />
-                        conversations back into daily life.
+                        Join the waitlist to get early access and bring conversations back into daily life.
                     </h3>
                 </section>
                 <section className='waitlist-buttons'>
@@ -77,7 +75,7 @@ const Waitlist = React.forwardRef((props, ref) => {
                     />
                 </section>
                 <button onClick={handleSubmit} disabled={isSubmitting}>
-                    {isSubmitting ? 'Joining...' : "Let's do it"}
+                    {isSubmitting ? 'Joining...' : "Join the waitlist"}
                 </button>
             </section>
             <section className='waitlist-rights-container'>

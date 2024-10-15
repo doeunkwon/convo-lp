@@ -9,14 +9,6 @@
     margin: 0px;
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-}
-
 .intro-header {
     flex: 1;
     display: flex;
@@ -34,12 +26,6 @@
     gap: var(--medium-gap);
     padding: 0px;
     margin: 0px;
-}
-
-.intro-logo {
-    max-width: calc(30px + 5vw);
-    padding-left: var(--medium-gap);
-    padding-top: var(--medium-gap);
 }
 
 .intro-image {
@@ -68,6 +54,7 @@
 
     .Intro {
         gap: var(--medium-gap);
+        justify-content: center;
     }
 
     .intro-description {

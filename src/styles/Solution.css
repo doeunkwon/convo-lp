@@ -20,7 +20,7 @@
 
 .solution-image {
     width: 30vw;
-    padding: var(--small-gap);
+    padding: var(--medium-gap);
 }
 
 .solution-panel {
