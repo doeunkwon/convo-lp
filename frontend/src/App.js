@@ -18,7 +18,7 @@ function App() {
   return (
     <main className="App">
       <Navbar scrollToWaitlist={scrollToWaitlist} />
-      <Intro />
+      <Intro scrollToWaitlist={scrollToWaitlist} />
       <Problem />
       <Solution />
       <Waitlist ref={waitlistRef} />

@@ -75,7 +75,7 @@ const Waitlist = React.forwardRef((props, ref) => {
                     />
                 </section>
                 <button onClick={handleSubmit} disabled={isSubmitting}>
-                    {isSubmitting ? 'Joining...' : "Join the waitlist"}
+                    {isSubmitting ? 'Joining...' : "Let's do it"}
                 </button>
                 <p>
                     @2024 Convo | All rights reserved

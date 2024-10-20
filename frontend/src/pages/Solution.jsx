@@ -6,7 +6,12 @@ function Solution() {
     return (
         <main className='Solution'>
             <section className='solution-content'>
-                <h2>
+                <h2 style={{
+                    color: 'transparent',
+                    backgroundImage: 'linear-gradient(45deg, var(--orange-color), var(--text-color))',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                }}>
                     Introducing Convo,
                     <br />
                     <span style={{color:'var(--light-text-color)'}}>Your social sidekick.</span>

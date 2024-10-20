@@ -20,7 +20,11 @@
     gap: 15px;
 }
 
-.stat-panel h2,
+.stat-panel h2 {
+    text-align: left;
+    white-space: nowrap
+}
+
 .stat-panel h3 {
     text-align: left;
 }
