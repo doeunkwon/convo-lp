@@ -11,14 +11,14 @@ import Navbar from './components/Navbar';
 function App() {
   const waitlistRef = useRef(null);
 
-  const scrollToWaitlist = () => {
-    waitlistRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const scrollToWaitlist = () => {
+  //   waitlistRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <main className="App">
-      <Navbar scrollToWaitlist={scrollToWaitlist} />
-      <Intro scrollToWaitlist={scrollToWaitlist} />
+      <Navbar />
+      <Intro  />
       <Problem />
       <Solution />
       <Waitlist ref={waitlistRef} />

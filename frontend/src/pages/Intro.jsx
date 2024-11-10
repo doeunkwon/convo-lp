@@ -1,6 +1,6 @@
 import '../styles/Intro.css'
 import introImage from '../assets/intro-image.png'
-function Intro({ scrollToWaitlist }) {
+function Intro() {
     return (
         <main className='Intro'>
             <section className='intro-header'>
@@ -13,7 +13,7 @@ function Intro({ scrollToWaitlist }) {
                     <h3>
                         Personalized daily challenges to help you grow socially, <i>wherever</i> you’re starting from.
                     </h3>
-                    <button onClick={scrollToWaitlist}>Join the waitlist</button>
+                    <button onClick={() => window.open('https://tryconvo.today', '_blank')}>Get started</button>
                 </section>
                 <img className='intro-image' src={introImage} alt="App Preview 1" />
             </section>

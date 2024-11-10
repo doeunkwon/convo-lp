@@ -1,53 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Waitlist.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import TextField from '../components/TextField';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import TextField from '../components/TextField';
 
 const Waitlist = React.forwardRef((props, ref) => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [name, setName] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = async () => {
-        if (!name || !email) {
-            alert('Please enter both name and email.');
-            return;
-        }
+    // const handleSubmit = async () => {
+    //     if (!name || !email) {
+    //         alert('Please enter both name and email.');
+    //         return;
+    //     }
     
-        setIsSubmitting(true);
+    //     setIsSubmitting(true);
         
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwJEOhFDOiqmVsWRnzMfPe4MOV86aEMGxZnrQ-jTFLETF2gf95gge4MyXC0OueBgzA/exec';
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('email', email);
+    //     const scriptURL = 'https://script.google.com/macros/s/AKfycbwJEOhFDOiqmVsWRnzMfPe4MOV86aEMGxZnrQ-jTFLETF2gf95gge4MyXC0OueBgzA/exec';
+    //     const formData = new FormData();
+    //     formData.append('name', name);
+    //     formData.append('email', email);
         
-        try {
-            const response = await fetch(scriptURL, {
-                method: 'POST',
-                body: formData,
-            });
+    //     try {
+    //         const response = await fetch(scriptURL, {
+    //             method: 'POST',
+    //             body: formData,
+    //         });
             
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+    //         if (!response.ok) {
+    //             throw new Error(`HTTP error! status: ${response.status}`);
+    //         }
             
-            const result = await response.json();
-            console.log(result);
-            if (result.result === 'success') {
-                alert('Thanks for joining our waitlist!');
-                setName('');
-                setEmail('');
-            } else {
-                throw new Error(result.message || 'Unknown error occurred');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('An error occurred. Please try again later.');
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
+    //         const result = await response.json();
+    //         console.log(result);
+    //         if (result.result === 'success') {
+    //             alert('Thanks for joining our waitlist!');
+    //             setName('');
+    //             setEmail('');
+    //         } else {
+    //             throw new Error(result.message || 'Unknown error occurred');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //         alert('An error occurred. Please try again later.');
+    //     } finally {
+    //         setIsSubmitting(false);
+    //     }
+    // };
 
     return (
         <main className='Waitlist' ref={ref}>
@@ -57,10 +57,10 @@ const Waitlist = React.forwardRef((props, ref) => {
                         Together, let's get people chatting again.
                     </h1>
                     <h3>
-                        Join the waitlist to get early access and bring conversations back into daily life.
+                        Join our growing community and help bring conversations back into daily life.
                     </h3>
                 </section>
-                <section className='waitlist-buttons'>
+                {/* <section className='waitlist-buttons'>
                     <TextField
                         icon={<FontAwesomeIcon icon={faUser} />}
                         placeholder='Name'
@@ -73,9 +73,12 @@ const Waitlist = React.forwardRef((props, ref) => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                </section>
-                <button onClick={handleSubmit} disabled={isSubmitting}>
+                </section> */}
+                {/* <button onClick={handleSubmit} disabled={isSubmitting}>
                     {isSubmitting ? 'Joining...' : "Let's do it"}
+                </button> */}
+                <button onClick={() => window.open('https://tryconvo.today', '_blank')}>
+                    Join Convo
                 </button>
                 <p>
                     @2024 Convo | All rights reserved

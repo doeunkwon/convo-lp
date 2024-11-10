@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+    padding: 0px;
 }
 
 .solution-content {
@@ -16,7 +17,7 @@
 }
 
 .solution-image {
-    width: 27vw;
+    width: 40vw;
     padding: var(--medium-gap);
 }
 

@@ -32,6 +32,11 @@
     text-align: center;
 }
 
+.waitlist-image {
+    width: 40vw;
+    padding: 0px;
+}
+
 @media (max-width: 1200px) {
 
     .waitlist-header {
