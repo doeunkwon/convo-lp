@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo195.png",
+      "src": "convo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo495.png",
+      "src": "convo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
